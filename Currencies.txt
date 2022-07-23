@@ -1,0 +1,10 @@
+Dollar - USD
+Euro - UER
+British Pound Sterling - GBP
+Canadian Dollar - CAD
+Japanese Yen - JPY
+Mexican Peso - MXN
+Swiss Franc - CHF
+Armenian Dram - AMD
+Australian Dollar - AUD
+Brazilian Real - BRL
