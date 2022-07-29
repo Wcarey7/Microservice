@@ -11,6 +11,17 @@ Curerncy Converter Microservice
    import socket
    
    import json
+   
+   from forex_python.converter import CurrencyRates
+   
+   from forex_python.converter import CurrencyCodes
+   
+   from pip._vendor import requests
+   
+   
+# Required Library Installs:
+
+   pip install forex-python
 
 
 
