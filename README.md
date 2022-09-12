@@ -1,5 +1,5 @@
 # Microservice
-Curerncy Converter Microservice
+Currency Converter Microservice
 
 # currency_converter UML
 
