@@ -16,7 +16,6 @@ Currency Converter Microservice
    
    from forex_python.converter import CurrencyCodes
    
-   from pip._vendor import requests
    
    
 # Required Library Installs:
