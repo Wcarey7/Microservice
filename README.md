@@ -47,3 +47,10 @@ Currency Converter Microservice
 # Microservice returns to client:
 
     converted_amount is a single number in the format of "11.7"
+    
+# Demo: 
+
+
+https://user-images.githubusercontent.com/13939125/189767221-19b79533-2d98-4ba7-8e5f-a181c5ee967e.mp4
+
+
