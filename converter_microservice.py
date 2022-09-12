@@ -42,20 +42,14 @@ def main():
     serverSocket.bind((Host, Port))
     serverSocket.listen()
     print("Server listening on: ", Host, Port)
+    connSocket, addr = serverSocket.accept()
+    print('Connect by ', str(addr))
 
-    # connSocket, addr = serverSocket.accept()
-    # print('Connect by ', str(addr))
-    # print("Waiting for message from client...")
 
     while True:
         try:
-            connSocket, addr = serverSocket.accept()
-            print('Connect by ', str(addr))
-            print("Waiting for message from client...")
 
             recv_data = connSocket.recv(4098)
-            # if not recv_data:
-            #     break
 
             data = json.loads(recv_data.decode())
 
