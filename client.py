@@ -12,20 +12,20 @@ print("Connected to: ", Host, Port)
 
 
 
-
-
-curr1 = "USD"
-curr2 = "EUR"
-amount = 11
-
-data = json.dumps({"base_currency": curr1, "des_currency": curr2, "amount_to_convert": amount})
-client.send(data.encode())
-
 while True:
-    recvData = client.recv(4098)
-    print(recvData.decode('utf-8'))     
-    break
+    curr1 = input("Enter first currency name: ")
+    curr2 = input("Enter second currency name: ")
+    amount = float(input("Enter amount to convert: "))
 
+    data = json.dumps({"base_currency": curr1, "des_currency": curr2, "amount_to_convert": amount})
+    client.send(data.encode())
+    
+    recvData = client.recv(4098)
+    print("Conversion: ", recvData.decode('utf-8'))    
+     
+    goAgain = input("Continue? Y/N: ")
+    if goAgain == "N":
+        break
 
 
 client.close()
