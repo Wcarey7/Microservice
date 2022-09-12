@@ -2,7 +2,6 @@ from ast import While
 import socket
 from forex_python.converter import CurrencyRates
 from forex_python.converter import CurrencyCodes
-#from pip._vendor import requests
 import requests
 import datetime as dt
 import json;
